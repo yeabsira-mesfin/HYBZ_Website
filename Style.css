@@ -67,7 +67,7 @@ header{
 }
 .logo img{
     float: left;
-    width: 300px;
+    width: 200px;
 }
 nav{
     float: right;
@@ -107,7 +107,10 @@ nav ul li:hover{
         width: 100%;
     }
     .toggle-btn{
-        display: block;
+        display: inline-block;
+        width: 20px;
+        margin-top: -10px;
+        padding: 0;
     }
     nav{
         display: none;
