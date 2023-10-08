@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     outline: none;
+
 }
 body{
     font-family: opens sans,sans-serif;
@@ -141,7 +142,10 @@ nav ul li:hover{
  color: white;
  font-size: 40px;
 }
-
+.banner h2{
+color: orange;
+font-weight: 700;
+}
 
 /* Slider */
 
@@ -258,4 +262,20 @@ nav ul li:hover{
 }
 .slick-arrow.slick-hidden {
   display: none;
+}
+/* Why you choose us? */
+.whyUs{
+  background-color: orange;
+  height: auto;
+  padding: 20px 0;
+  color: white;
+}
+.whyUs .row .col-3 i{
+  font-size: 40px;
+  color: white;
+  display: block;
+  text-align: center;
+}
+.whyUs .row .col-3 p{
+  text-align: center;
 }
