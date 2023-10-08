@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percent</title>
+    <style>
+.progress-bar{
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-bar .line{
+  height: 15px;
+  background: #e8e8e8;
+  border-radius: 7px;
+  position: relative;
+}
+
+.progress-bar .label{
+  font-size: 30px;
+}
+
+.progress-bar > .line > span{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: red;
+  border-radius: 10px;
+}
+
+
+@keyframes animationLoaded{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="progress-bar">
+        
+        <div class="label" data-count="60">Project done%</h1></div>
+        <div class="line" style="width:500px">
+          <span></span>
+        </div>
+      </div>
+      
+      <div class="progress-bar">
+        <div class="label" data-count="40">%</div>
+      
+        <div class="line" style="width:500px">
+          <span></span>
+        </div>
+      </div>
+      
+      <div class="progress-bar">
+        <div class="label" data-count="20">100%</div>
+        <div class="line" style="width:500px">
+          <span></span>
+        </div>
+      </div>
+      
+      <div class="progress-bar">
+        <div class="label" data-count="100">100%</div>
+        <div class="line"style="width:500px">
+          <span></span>
+        </div>
+      </div>
+      
+     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+  
+  var progressBar = document.querySelectorAll(".progress-bar");
+  var time = 1500;
+  
+
+  progressBar.forEach(function(i) {
+    let label = i.children[0];
+    let line = i.children[1];
+    let count = 0;
+    let dataCount = label.getAttribute("data-count");
+    let lineCount = line.children[0];
+ 
+    let runTime = time/dataCount;
+    
+    let animationLineCount = setInterval(function(){
+      if(count < dataCount){
+        count++;
+        // label.innerHTML = "Project done";
+        lineCount.style.width = count + '%';
+      }
+    },runTime);
+  });
+});
+
+     </script> 
+</body>
+</html>

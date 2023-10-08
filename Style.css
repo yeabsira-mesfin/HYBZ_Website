@@ -127,6 +127,10 @@ nav ul li:hover{
     nav.show li:hover{
         background-color: #022F78;
     }
+    .consumer .row .col-6 img{
+      width: 100%;
+      height: auto;
+    }
 }
 
 /* Banner */
@@ -135,9 +139,10 @@ nav ul li:hover{
     background-repeat: no-repeat;
     height: auto;
     padding: 10px;
+    margin-top: -10px;
    
 }
-.banner .row .col-12 h1,h2{
+.banner h1{
  text-align: center;
  color: white;
  font-size: 40px;
@@ -278,4 +283,43 @@ font-weight: 700;
 }
 .whyUs .row .col-3 p{
   text-align: center;
+}
+
+/* Progress bar */
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-bar .line {
+  height: 15px;
+  background: #e8e8e8;
+  border-radius: 7px;
+  position: relative;
+}
+
+.progress-bar > .line > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: red;
+  border-radius: 10px;
+}
+
+@keyframes animationLoaded {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.consumer{
+  padding: 10px;
+}
+.consumer .row .col-6 img{
+  width: 90%;
+  height: 450px;
 }
