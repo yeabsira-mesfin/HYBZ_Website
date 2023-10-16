@@ -147,6 +147,9 @@ nav ul li:hover{
     .footer2 .icon{
       text-align: left !important;
     }
+    .footer .support{
+      padding-left: 1px !important;
+    }
     .footer p{
   padding: 0
 }
@@ -368,6 +371,9 @@ font-weight: 700;
   padding: 2rem;
   background-color: orange;
   color: white;
+}
+.footer .support{
+  padding-left: 2rem;
 }
 .footer h3{
   font-weight: 500;
