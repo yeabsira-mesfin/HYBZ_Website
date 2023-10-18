@@ -398,8 +398,9 @@ font-weight: 700;
   display: flex;
   justify-content: end;
 }
-.serviceone h1{
+.serviceone h1:first-child{
   text-align: center;
+
   color: orange;
 }
 .serviceone .row .col-6 img{
