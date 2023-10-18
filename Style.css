@@ -392,3 +392,20 @@ font-weight: 700;
   font-size: 150%;
   color: orange;
 }
+/* Services we give */
+/* Service one */
+.serviceone .row .col-6{
+  display: flex;
+  justify-content: end;
+}
+.serviceone h1{
+  text-align: center;
+  color: orange;
+}
+.serviceone .row .col-6 img{
+  border-radius: 40px;
+  padding: 1rem;
+}
+.serviceone .row .col-5 h1,h1,p{
+  text-align: left;
+}
