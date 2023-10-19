@@ -151,9 +151,16 @@ nav ul li:hover{
       padding-left: 1px !important;
     }
     .footer p{
-  padding: 0
+      padding: 0
+    }
+
 }
-    
+@media screen and (max-width:980px){
+  .servicetwo img{
+   width: 200px;
+   padding-left: 4rem;
+  }
+ 
 }
 
 /* Banner */
@@ -405,8 +412,19 @@ font-weight: 700;
 }
 .serviceone .row .col-6 img{
   border-radius: 40px;
-  padding: 1rem;
+  padding: 2rem;
 }
 .serviceone .row .col-5 h1,h1,p{
   text-align: left;
+}
+
+/* Service Two */
+.servicetwo{
+  background-color: #011638;
+  height: auto;
+}
+.servicetwo .col-4{}
+.servicetwo h1,h3,p{
+  text-align: center;
+  color: white;
 }
