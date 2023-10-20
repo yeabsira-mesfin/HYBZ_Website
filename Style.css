@@ -309,6 +309,9 @@ font-weight: 700;
 .whyUs .row .col-3 p{
   text-align: center;
 }
+.whyUs h2{
+  text-align: center;
+}
 .consumer{
   padding:1rem;
 }
@@ -459,4 +462,5 @@ justify-content: right;
 }
 .servicethree h1{
   text-align: center;
+  color: white;
 }
