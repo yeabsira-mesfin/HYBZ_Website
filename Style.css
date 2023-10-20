@@ -153,16 +153,11 @@ nav ul li:hover{
     .footer p{
       padding: 0
     }
-
+    .serviceone .image{
+      display: flex;
+      justify-content: center !important;
+    }
 }
-@media screen and (max-width:980px){
-  .servicetwo img{
-   width: 200px;
-   padding-left: 4rem;
-  }
- 
-}
-
 /* Banner */
 .banner{
     background-image: url('Assets/bannnner.png');
@@ -379,6 +374,9 @@ font-weight: 700;
   background-color: orange;
   color: white;
 }
+.footer p{
+  text-align: left;
+}
 .footer .support{
   padding-left: 2rem;
 }
@@ -387,6 +385,7 @@ font-weight: 700;
 }
 .footer2 p{
   padding: 0 2rem;
+  text-align: left;
 }
 .footer2{
   background-color: #011638;
@@ -401,10 +400,7 @@ font-weight: 700;
 }
 /* Services we give */
 /* Service one */
-.serviceone .row .col-6{
-  display: flex;
-  justify-content: end;
-}
+
 .serviceone h1:first-child{
   text-align: center;
 
@@ -412,19 +408,55 @@ font-weight: 700;
 }
 .serviceone .row .col-6 img{
   border-radius: 40px;
+  width: 400px;
   padding: 2rem;
 }
 .serviceone .row .col-5 h1,h1,p{
   text-align: left;
 }
-
+.serviceone .image{
+  width: 100%;
+  display: flex;
+justify-content: right;
+  padding: 1rem;
+}
+.serviceone h1,h2{
+  text-align: left;
+  padding-left: 1rem;
+}
+.serviceone .headerone{
+  font-size: 40px;
+  font-weight: 700;
+}
 /* Service Two */
 .servicetwo{
   background-color: #011638;
-  height: auto;
+  
 }
-.servicetwo .col-4{}
-.servicetwo h1,h3,p{
+.servicetwo h3,p{
   text-align: center;
   color: white;
+}
+.servicetwo .col-4 img{
+  width: 200px;
+}
+.servicetwo .col-4 .image{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.serviceheader{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  padding: 1rem;
+  font-weight: 900;
+  size: 40px;
+}
+/* Service Three */
+.servicethree{
+  background-color: orange;
+}
+.servicethree h1{
+  text-align: center;
 }
