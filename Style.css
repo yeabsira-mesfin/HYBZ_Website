@@ -175,6 +175,7 @@ nav ul li:hover{
 .banner h2{
 color: orange;
 font-weight: 700;
+text-align: center;
 }
 
 /* Slider */
@@ -413,11 +414,12 @@ font-weight: 700;
     justify-content: center; 
     align-items: center;
 }
-.ceo .row .col-12 img{
-  padding: 2rem;
-  
-}
 
+.ceo img{
+  padding: 2rem;
+  width: 400px;
+  border-radius: 1rem !important;
+}
 .serviceone h1:first-child{
   text-align: center;
   color: orange;
