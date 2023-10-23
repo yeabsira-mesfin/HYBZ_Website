@@ -403,18 +403,31 @@ font-weight: 700;
 }
 /* Services we give */
 /* Service one */
+.ceo{
+  background-color: orange;
+  margin-top: -10px;
+  color: white;
+}
+.ceo .row .col-12{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.ceo .row .col-12 img{
+  padding: 2rem;
+  
+}
 
 .serviceone h1:first-child{
   text-align: center;
-
   color: orange;
 }
-.serviceone .row .col-6 img{
+.serviceone .row .col-3 img{
   border-radius: 40px;
   width: 400px;
   padding: 2rem;
 }
-.serviceone .row .col-5 h1,h1,p{
+.serviceone .row .col-3 h1,h1,p{
   text-align: left;
 }
 .serviceone .image{
@@ -463,9 +476,7 @@ justify-content: right;
 .imagetwo:hover{
   box-shadow: 5px 5px 4px white;
 }
-.imagetwo img:hover{
-  width: 210px;
-}
+
 /* Service Three */
 .servicethree{
   background-color: orange;
