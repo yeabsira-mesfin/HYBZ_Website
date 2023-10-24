@@ -454,6 +454,13 @@ justify-content: right;
 .servicetwo h3,p{
   text-align: center;
   color: white;
+  
+}
+.servicetwo h3{
+  padding-top: 1rem;
+}
+.servicetwo p{
+  padding-bottom: 1rem;
 }
 .servicetwo .col-4 img{
   width: 200px;
@@ -486,4 +493,15 @@ justify-content: right;
 .servicethree h1{
   text-align: center;
   color: white;
+}
+/* Contact US */
+.contactUs .row .col-6 div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.contactUs .row .col-6 img{
+  width: 800px;
 }
