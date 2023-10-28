@@ -3,7 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
     outline: none;
+    
 }
+
 body{
     font-family: opens sans,sans-serif;
 }
@@ -420,16 +422,15 @@ text-align: center;
   margin-top: -10px;
   color: white;
 }
+
 .ceo .row .col-12{
     display: flex;
     justify-content: center; 
     align-items: center;
 }
-
 .ceo img{
   padding: 2rem;
   width: 400px;
-  border-radius: 1rem !important;
 }
 .serviceone h1:first-child{
   text-align: center;
@@ -495,6 +496,10 @@ justify-content: right;
 }
 .imagetwo:hover{
   box-shadow: 5px 5px 4px white;
+}
+.imagetwo img{
+  height: 200px;
+ 
 }
 
 /* Service Three */
