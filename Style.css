@@ -137,6 +137,7 @@ nav ul li:hover{
     }
     .progress-bar{
       width: 310px !important;
+      display: block !;
     }
    
     @keyframes progress {
@@ -464,14 +465,20 @@ text-align: center;
 .serviceone .row .col-3 h1,h1,p{
   text-align: left;
 }
+
 .serviceone .image{
   width: 100%;
   display: flex;
-justify-content: right;
-  padding: 1rem;
+justify-content: center;
+align-items: center;
+ padding: 2rem;
+}
+.serviceone img{
+  width: 400px;
+  padding: 0 1rem;
 }
 .serviceone h1,h2{
-  text-align: left;
+  text-align: center;
   padding-left: 1rem;
 }
 .serviceone .headerone{
