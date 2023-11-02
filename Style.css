@@ -442,6 +442,9 @@ text-align: center;
   font-size: 150%;
   color: orange;
 }
+.footer2 .col-8 a:hover{
+  color: orange;
+}
 /* Services we give */
 /* Service one */
 .ceo{
