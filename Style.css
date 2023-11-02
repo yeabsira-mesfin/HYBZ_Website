@@ -159,8 +159,9 @@ nav ul li:hover{
       display: flex;
       justify-content: center !important;
     }
-    .contactUs .row .col-6 img{
+    .contactUs .row .col-6 .image img{
      width: 300px !important;
+     border-radius: 1rem;
     }
     .contactUs .row .col-6 .image{
       display: flex;
@@ -442,6 +443,7 @@ text-align: center;
   background-color: orange;
   margin-top: -10px;
   color: white;
+  box-shadow: 5px 5px 4px ;
 }
 
 .ceo .row .col-12{
@@ -451,7 +453,9 @@ text-align: center;
 }
 .ceo img{
   padding: 2rem;
+  border-radius: 3rem;
   width: 400px;
+  box-shadow: 5px 5px 4px #011638;
 }
 .serviceone h1:first-child{
   text-align: center;
@@ -520,13 +524,15 @@ align-items: center;
 }
 .imagetwo{
   box-shadow: 5px 5px 4px orange;
+  border-radius: 1rem;
 }
 .imagetwo:hover{
   box-shadow: 5px 5px 4px white;
+  border-radius: 1rem;
 }
 .imagetwo img{
   height: 200px;
- 
+  border-radius: 1rem;
 }
 
 /* Service Three */
@@ -550,6 +556,7 @@ align-items: center;
 }
 .contactUs .row .col-6 img{
   width: 600px;
+  border-radius: 1rem;
 }
 .contactUs input{
   display: block;
