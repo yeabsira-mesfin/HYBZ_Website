@@ -138,6 +138,7 @@ nav ul li:hover{
     .progress-bar{
       width: 310px !important;
       display: block !;
+      
     }
    
     @keyframes progress {
@@ -351,7 +352,7 @@ text-align: center;
   color: orange;
   font-weight: 700;
   text-align: left;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 .consumer .consumers  .secondp{
   text-align: left;
@@ -371,18 +372,19 @@ text-align: center;
 .progress-bar {
   background: #022F78;
   border-radius: 100px;
-  
   position: relative;
   width: 350px;
   height: 10px;
-  margin: 20px 0;
-  padding: 0 0;
+  margin: 1rem ;
+ 
 }
 
 .progress-value {
   background: orange;
   width: 100px;
   height: 10px;
+  padding-left: 1rem;
+
   position: relative;
   border-radius: 100px;
   box-shadow: 0 10px 15px -10px #fff;
