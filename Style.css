@@ -413,6 +413,9 @@ text-align: center;
   background-color: orange;
   color: white;
 }
+.footer img{
+  width: 200px;
+}
 .footer p{
   text-align: left;
 }
@@ -456,6 +459,9 @@ text-align: center;
   border-radius: 3rem;
   width: 400px;
   box-shadow: 5px 5px 4px #011638;
+}
+.ceo img:hover{
+  box-shadow: 5px 5px 4px white;
 }
 .serviceone h1:first-child{
   text-align: center;
