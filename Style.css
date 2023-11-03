@@ -338,7 +338,7 @@ text-align: center;
   text-align: center;
 }
 .consumer{
-  padding:1rem;
+  padding:0rem;
 }
 .consumer .consumers{
   width: 100%;
@@ -433,10 +433,13 @@ text-align: center;
 }
 .footer2{
   background-color: #011638;
-  color: white;
 }
 .footer2 .icon{
   text-align: right;
+}
+.footer2, .contactUs .icon i{
+  padding: 1rem 5px ;
+  color: orange;
 }
 .footer2 .icon i:hover{
   font-size: 150%;
@@ -608,4 +611,6 @@ textarea::placeholder{
 .contactUs .iconone{
   columns: black !important;
   text-align: left;
+  color: orange;
+  padding: 1rem 5px;
 }
