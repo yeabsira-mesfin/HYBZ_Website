@@ -3,7 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
     outline: none;
-    
 }
 
 body{
@@ -450,11 +449,12 @@ text-align: center;
 }
 /* Services we give */
 /* Service one */
+
 .ceo{
-  background-color: orange;
+  background-color:orange;
   margin-top: -10px;
   color: white;
-  box-shadow: 5px 5px 4px ;
+  
 }
 
 .ceo .row .col-12{
