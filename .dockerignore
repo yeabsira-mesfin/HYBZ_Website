@@ -1,0 +1,9 @@
+.git
+.env
+.venv
+data
+**/node_modules
+dashboard/dist
+Assets
+public
+src

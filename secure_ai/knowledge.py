@@ -56,7 +56,7 @@ def retrieve(store, user, question, top_k=4):
     results = []
     quarantined = 0
     for row, counts in zip(rows, corpus):
-        if suspicious(row['body']):
+        if suspicious(row['body']) or suspicious(row['title']):
             quarantined += 1
             continue
         score = sum((1 + math.log(counts[t])) * math.log(1 + len(rows) / (1 + sum(t in c for c in corpus)))
