@@ -2,7 +2,7 @@
 
 ### Secure Enterprise Knowledge Assistant
 
-[![Quality gates](https://github.com/yeabsira-mesfin/HYBZ_Website/actions/workflows/secure-ai.yml/badge.svg)](https://github.com/yeabsira-mesfin/HYBZ_Website/actions/workflows/secure-ai.yml)
+[![Quality gates](https://github.com/yeabsira-mesfin/vaultwise-secure-knowledge/actions/workflows/secure-ai.yml/badge.svg)](https://github.com/yeabsira-mesfin/vaultwise-secure-knowledge/actions/workflows/secure-ai.yml)
 
 A runnable security engineering portfolio project by **Yeabsira Mesfin**, built with Python, FastAPI, React, TypeScript, and SQLite.
 
@@ -18,6 +18,12 @@ A runnable security engineering portfolio project by **Yeabsira Mesfin**, built 
 - Prompt-injection signals and quarantine for known suspicious content.
 - Optional local Ollama generation; default extractive mode needs no model or API key.
 - React/TypeScript dashboard, file upload, source inspection, and responsive layouts.
+
+## Public demo
+
+The Vercel deployment serves the interactive Vaultwise sample, not the archived HYBZ pages. Choose a synthetic persona and ask document questions. The server runs the same retrieval, role filters, redaction, and injection checks against a fresh temporary sample corpus per request. No login, uploads, saved conversations, or paid model calls are enabled on this public demo. Persona selection is not authentication. Use synthetic questions only.
+
+`app.py` is the public Vercel entry point. `secure_ai.api:app` remains the full authenticated local application below. `vercel.json` builds the React public-demo interface into `public/`; the old root `index.html` is not served. No database or model secrets are needed for the public sample.
 
 ## Run locally
 
@@ -87,7 +93,7 @@ npm run build
 npm audit --audit-level=moderate
 ```
 
-The backend suite contains **19 tests**. See [verification notes](docs/VERIFICATION.md) for what was actually run and the limits of those checks. CI repeats backend tests, static security checks, dependency auditing, and frontend compilation.
+The backend suite contains **21 tests**. See [verification notes](docs/VERIFICATION.md) for what was actually run and the limits of those checks. CI repeats backend tests, static security checks, dependency auditing, and frontend compilation.
 
 ## Docker
 
@@ -113,9 +119,9 @@ Read the [threat model](docs/THREAT-MODEL.md). This is a local portfolio demonst
 
 ## Related projects
 
-- [Vaultwise](https://github.com/yeabsira-mesfin/HYBZ_Website): secure knowledge retrieval.
-- [ProbeLab](https://github.com/yeabsira-mesfin/FormsAndInputs): policy evaluations and API integration checks.
-- [Traceguard](https://github.com/yeabsira-mesfin/AdvancedCounter): constrained incident investigation.
+- [Vaultwise](https://github.com/yeabsira-mesfin/vaultwise-secure-knowledge): secure knowledge retrieval.
+- [ProbeLab](https://github.com/yeabsira-mesfin/probelab-ai-security): policy evaluations and API integration checks.
+- [Traceguard](https://github.com/yeabsira-mesfin/incident-investigation-agent): constrained incident investigation.
 
 ## Author
 

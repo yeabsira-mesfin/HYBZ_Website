@@ -9,3 +9,6 @@ data/
 dashboard/node_modules/
 dashboard/dist/
 *.log
+
+/public/
+/.vercel/

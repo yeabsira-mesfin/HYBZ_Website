@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "fastapi",
+  "buildCommand": "npm ci --prefix dashboard && VITE_PUBLIC_DEMO=true npm run build --prefix dashboard && cp -r dashboard/dist public",
+  "functions": {
+    "app.py": {
+      "maxDuration": 30,
+      "excludeFiles": "{Assets/**,dashboard/node_modules/**,tests/**,docs/**,data/**}"
+    }
+  }
+}

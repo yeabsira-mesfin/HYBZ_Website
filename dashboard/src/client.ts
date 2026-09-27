@@ -1,6 +1,9 @@
+export const publicDemo = import.meta.env.VITE_PUBLIC_DEMO === 'true';
+let demoPersona = 'admin@alpha.test';
+export function setDemoPersona(value:string){ demoPersona=value; }
 export interface User { id:string; email:string; tenant:string; role:'admin'|'analyst'|'viewer' }
 export async function api<T>(path:string, method='GET', body?:unknown):Promise<T> {
-  const response=await fetch('/api'+path,{method,credentials:'same-origin',headers:{'Content-Type':'application/json','X-Requested-With':'secure-ai'},body:body===undefined?undefined:JSON.stringify(body)});
+  const response=await fetch(publicDemo ? '/api/demo'+path+'?persona='+encodeURIComponent(demoPersona) : '/api'+path,{method,credentials:'same-origin',headers:{'Content-Type':'application/json','X-Requested-With':'secure-ai'},body:body===undefined?undefined:JSON.stringify(body)});
   const data=await response.json();
   if(!response.ok) throw new Error(typeof data.detail==='string'?data.detail:'The request could not be completed. Check the input.');
   return data as T;
