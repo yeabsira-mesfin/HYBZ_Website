@@ -23,7 +23,7 @@ A runnable security engineering portfolio project by **Yeabsira Mesfin**, built 
 
 The Vercel deployment serves the interactive Vaultwise sample, not the archived HYBZ pages. Choose a synthetic persona and ask document questions. The server runs the same retrieval, role filters, redaction, and injection checks against a fresh temporary sample corpus per request. No login, uploads, saved conversations, or paid model calls are enabled on this public demo. Persona selection is not authentication. Use synthetic questions only.
 
-`app.py` is the public Vercel entry point. `secure_ai.api:app` remains the full authenticated local application below. `vercel.json` builds the React public-demo interface into `public/`; the old root `index.html` is not served. No database or model secrets are needed for the public sample.
+`api/index.py` is the public Vercel entry point. `secure_ai.api:app` remains the full authenticated local application below. `vercel.json` builds the React public-demo interface into `dashboard/dist/`; the old root `index.html` is not served. No database or model secrets are needed for the public sample.
 
 ## Run locally
 
